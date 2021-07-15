@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB523A51269CBFF8004FDD5B /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB523A50269CBFF8004FDD5B /* AvatarImageView.swift */; };
 		ABB3EF2C26865970001ACD55 /* FastlaneSnapshotsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB3EF2B2686596F001ACD55 /* FastlaneSnapshotsApp.swift */; };
 		ABB3EF2E26865970001ACD55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB3EF2D26865970001ACD55 /* ContentView.swift */; };
 		ABB3EF3026865972001ACD55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABB3EF2F26865972001ACD55 /* Assets.xcassets */; };
 		ABB3EF3326865972001ACD55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABB3EF3226865972001ACD55 /* Preview Assets.xcassets */; };
 		ABB3EF3E26865973001ACD55 /* FastlaneSnapshotsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB3EF3D26865973001ACD55 /* FastlaneSnapshotsTests.swift */; };
 		ABB3EF4926865973001ACD55 /* FastlaneSnapshotsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB3EF4826865973001ACD55 /* FastlaneSnapshotsUITests.swift */; };
+		ABD263B9269F570500C2C95E /* TextFieldAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD263B8269F570500C2C95E /* TextFieldAlert.swift */; };
+		ABD263BB269F5DE800C2C95E /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD263BA269F5DE800C2C95E /* GameView.swift */; };
+		ABD263BD269F680000C2C95E /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD263BC269F67FF00C2C95E /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB523A50269CBFF8004FDD5B /* AvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
 		ABB3EF282686596F001ACD55 /* FastlaneSnapshots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastlaneSnapshots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB3EF2B2686596F001ACD55 /* FastlaneSnapshotsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastlaneSnapshotsApp.swift; sourceTree = "<group>"; };
 		ABB3EF2D26865970001ACD55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +50,9 @@
 		ABB3EF4426865973001ACD55 /* FastlaneSnapshotsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastlaneSnapshotsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB3EF4826865973001ACD55 /* FastlaneSnapshotsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastlaneSnapshotsUITests.swift; sourceTree = "<group>"; };
 		ABB3EF4A26865973001ACD55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABD263B8269F570500C2C95E /* TextFieldAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldAlert.swift; sourceTree = "<group>"; };
+		ABD263BA269F5DE800C2C95E /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		ABD263BC269F67FF00C2C95E /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,9 @@
 				ABB3EF2F26865972001ACD55 /* Assets.xcassets */,
 				ABB3EF3426865972001ACD55 /* Info.plist */,
 				ABB3EF3126865972001ACD55 /* Preview Content */,
+				AB523A50269CBFF8004FDD5B /* AvatarImageView.swift */,
+				ABD263B8269F570500C2C95E /* TextFieldAlert.swift */,
+				ABD263BA269F5DE800C2C95E /* GameView.swift */,
 			);
 			path = FastlaneSnapshots;
 			sourceTree = "<group>";
@@ -124,6 +135,7 @@
 		ABB3EF4726865973001ACD55 /* FastlaneSnapshotsUITests */ = {
 			isa = PBXGroup;
 			children = (
+				ABD263BC269F67FF00C2C95E /* SnapshotHelper.swift */,
 				ABB3EF4826865973001ACD55 /* FastlaneSnapshotsUITests.swift */,
 				ABB3EF4A26865973001ACD55 /* Info.plist */,
 			);
@@ -259,8 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABD263B9269F570500C2C95E /* TextFieldAlert.swift in Sources */,
+				AB523A51269CBFF8004FDD5B /* AvatarImageView.swift in Sources */,
 				ABB3EF2E26865970001ACD55 /* ContentView.swift in Sources */,
 				ABB3EF2C26865970001ACD55 /* FastlaneSnapshotsApp.swift in Sources */,
+				ABD263BB269F5DE800C2C95E /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABB3EF4926865973001ACD55 /* FastlaneSnapshotsUITests.swift in Sources */,
+				ABD263BD269F680000C2C95E /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
