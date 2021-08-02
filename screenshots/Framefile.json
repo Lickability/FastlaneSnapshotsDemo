@@ -1,0 +1,31 @@
+{
+  "device_frame_version": "latest",
+  "default": {
+    "title": {
+      "font": "./Fonts/SF-Pro-Rounded-Bold.otf",
+      "color": "#FFFFFF"
+    },
+    "padding": 50,
+    "show_complete_frame": false,
+    "stack_title": false,
+    "use_platform": "IOS"
+  },
+  "data": [
+    {
+      "filter": "1-GameView",
+      "background": "./red.png"
+    },
+    {
+      "filter": "2-StepperIncremented",
+      "background": "./blue.png"
+    },
+    {
+      "filter": "3-Alert",
+      "background": "./yellow.png"
+    },
+    {
+      "filter": "4-GameChanged",
+      "background": "./green.png"
+    }
+  ]
+}
