@@ -30,31 +30,15 @@ class FastlaneSnapshotsUITests: XCTestCase {
         snapshot("2-StepperIncremented")
         app.navigationBars.firstMatch.buttons.firstMatch.tap()
         app.textFields.firstMatch.tap()
-        snapshot("3-Alert")
         app.textFields.buttons["Clear text"].tapElement()
         app.typeText("Taboo")
+        snapshot("3-Alert")
         app.buttons["Dismiss"].tap()
-        snapshot("4-GameViewChanged")
+        snapshot("4-GameChanged")
     }
 }
 
 extension XCUIElement {
-
-     /// Removes any current text in the field before typing in the new value
-     /// - Parameter text: the text to enter into the field
-    func clearAndEnterText(text: String) {
-        guard let stringValue = self.value as? String else {
-            XCTFail("Tried to clear and enter text into a non string value")
-            return
-        }
-
-        tap()
-
-        let deleteString = String(repeating: XCUIKeyboardKey.delete.rawValue, count: stringValue.count)
-
-        typeText(deleteString)
-        typeText(text)
-    }
 
     func tapElement() {
         if isHittable {
